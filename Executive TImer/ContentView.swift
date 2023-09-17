@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let defaultTIme: CGFloat = 20
+    @State private var timerRunning = false
+    @State private var countdownTIme: CGFloat = defaultTIme
+    
     var body: some View {
+        
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
